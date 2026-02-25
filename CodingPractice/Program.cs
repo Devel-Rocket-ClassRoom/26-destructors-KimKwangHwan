@@ -62,7 +62,6 @@ static void Test2()
     hero.Attack();
     hero = null;
 }
-
 static void Test3()
 {
     Car car1 = new Car("검정");
@@ -78,14 +77,12 @@ static void Test3()
     car2 = null;
     car3 = null;
 }
-
 static void Test4()
 {
     GameSession session = new GameSession("플레이어1");
     session.Play();
     session = null;
 }
-
 static void Test5()
 {
     Monster m1 = new Monster("슬라임");
@@ -99,7 +96,6 @@ static void Test5()
     m2 = null;
     m3 = null;
 }
-
 static void Test6()
 {
     Console.WriteLine("=== 아이템 생성 ===");
@@ -134,7 +130,6 @@ class TestObject
         Console.WriteLine($"객체 {_id} 소멸");
     }
 }
-
 class Character
 {
     private string _name;
@@ -154,7 +149,6 @@ class Character
         Console.WriteLine($"[3] {_name} 소멸");
     }
 }
-
 class Car
 {
     private string _color;
@@ -174,7 +168,6 @@ class Car
         Console.WriteLine($"{_color}색 자동차 폐차");
     }
 }
-
 class GameSession
 {
     private string _playerName;
@@ -200,7 +193,6 @@ class GameSession
         Console.WriteLine($"플레이 시간: {duration.TotalSeconds:F1}초");
     }
 }
-
 class Monster
 {
     private static int s_totalCount = 0;
@@ -231,7 +223,6 @@ class Monster
         Console.WriteLine($"총 생성: {s_totalCount}, 현재 생존: {s_aliveCount}");
     }
 }
-
 class GameItem
 {
     private static int s_nextId = 1;
